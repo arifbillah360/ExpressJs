@@ -10,8 +10,9 @@ function about(req, res){
 function contact(req, res){
     res.send('my number is:01779440297<br> My Email is: emran.alarif8@gmail.com');
 }
+
 app.get('/', HomeApp );
 app.get('/about', about );
 app.get('/contact', contact );
-app.listen(80, () => console.log('Open port 3000'));
+app.listen(3000, () => console.log('Open port 3000'));
 
