@@ -36,8 +36,13 @@ app.get('/users/:id', (req, res)=>{
     const name = users[id];
     res.send({id, name});
 });
-
-
+//POST
+app.post('/addUser', (req, res)=>{
+    //console.log('Data Recived', req.body);
+    const user = res.body;
+    user.id = 55;
+    res.send(user);
+})
 
 app.listen(4200, () => console.log('Open port 4200'));
 
